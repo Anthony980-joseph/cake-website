@@ -1,0 +1,164 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+body{
+    font-family: Arial, sans-serif;
+
+}
+header{
+    background-color: #000000;
+    /*background-image:linear-gradient(-45deg, #000000b0,#3d043d3d);*/
+    padding:1rem;
+    text-align: center;
+}
+.navbar-scrolled{
+    background-color: #0c0c0c;
+    color: white;
+}
+.hide-menu-on-desktop-view{
+    display: none;
+}
+.logo{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    background-image: linear-gradient(-45deg, #571845, #c70039);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    margin-top: 0;
+    }
+.sidebar{
+   position:fixed;
+   background-color: #0c0c0c9a;
+   color: #0c0c0c;
+   display: none;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-around;
+    top:0;
+    right: 0;
+    height: 100vh;
+    width: 300px;
+    z-index: 999;
+    overflow: scroll;
+    overflow: hidden;
+}
+.sidebar svg:hover{
+    fill: #571845;
+    cursor: pointer;
+}
+li svg:hover{
+    fill: #571845;
+    cursor: pointer;
+}
+.sidebar li{
+    width: 100%;
+}
+.sidebar li:first-child{
+    align-self: self-start;
+    margin-left: 70px;
+}
+@media(max-width:800px){
+    .hidenavbar{
+        display: none;
+    }
+    li svg{
+        margin-top: .5rem;
+    }
+    .hide-menu-on-desktop-view{
+        display: flex;
+    }
+}
+nav ul{
+    list-style: none;
+    margin:0;
+    padding:0;
+    display: flex;
+    justify-content: space-between;
+}
+nav svg{
+    fill: white;
+    width: 20px;
+    height: 20px;
+    margin-top: 10px;
+}
+nav li {
+    margin-right: 20px;
+}
+.hidenavbar{
+    margin-top: 10px;
+}
+nav a {
+    color:#fff;
+    text-decoration: none;
+    transition: all 0.5s ease-in-out;
+    font-size: 0.9rem;
+
+}
+nav a:hover{
+    background-image: linear-gradient(-45deg, #571845, #c70039);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.hero{
+    background-image: url(./images/contact\ bckgrnd\ img.jpeg);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height:90vh;
+    background-size: cover;
+    background-position: center;
+}    
+.hero h2{
+    font-size: 5vw;
+   color: #fff;
+ 
+    
+}
+
+
+footer{
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    padding: 50px;
+    gap: 10px;
+}
+.footer-info{
+    display: flex;
+    flex-direction:column;
+}
+.contact-intro{
+    line-height: 20px;
+}
+footer p{
+    font-size: 14px;
+    margin: 10px 0;
+}
+footer h3{
+    font-size:24px;
+}
+footer svg{
+    fill: white;
+    width: 20px;
+    height: 20px;
+    transition:all 0.5s;
+}
+footer svg:hover{
+    fill: #c70039;
+}
+footer img{
+    width: 70%;
+    object-fit: cover;
+}
+.footer-cake img{
+    width: 70%;
+    height: auto ;
+}
+footer h5{
+    margin: 5px 0;
+}
